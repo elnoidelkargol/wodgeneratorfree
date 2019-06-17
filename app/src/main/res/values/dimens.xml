@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_results">25dp</dimen>
+    <dimen name="infoRandomWod">26dp</dimen>
+    <dimen name="switch_space">5dp</dimen>
+    <dimen name="title_filters">26sp</dimen>
+    <dimen name="text_filters">18sp</dimen>
+    <dimen name="title_wod">65sp</dimen>
+    <dimen name="wod_type">28sp</dimen>
+    <dimen name="wod_description">23sp</dimen>
+</resources>

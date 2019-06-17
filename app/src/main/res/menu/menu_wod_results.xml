@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_wod_detail"
+        android:icon="@drawable/ic_back"
+        android:title="@string/view_wod"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

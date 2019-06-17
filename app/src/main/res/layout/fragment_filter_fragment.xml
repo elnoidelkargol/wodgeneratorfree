@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filter_fragment"
+    android:background="@color/backgroundGeneral">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type"
+                    style="@style/title_filters"/>
+
+                <Switch
+                    android:id="@+id/switchAllType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:checked="true"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/colorPrimaryDark" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/switchFilterGirl"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/title_girls_minus"
+                        style="@style/text_filters"
+                         />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/switchFilterHeroe"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/title_heroes_minus"
+                        style="@style/text_filters"
+     />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title_filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cardio" />
+
+                <Switch
+                    android:checked="true"
+                    android:id="@+id/switchAllCardio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/colorPrimaryDark" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/bear_crawl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/bear_crawl"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/double_unders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/double_unders"
+                        style="@style/text_filters"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/run"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/run"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/row"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/row"
+                        style="@style/text_filters"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_filters"
+                    android:text="@string/halterofilia"
+                    />
+                <Switch
+                    android:id="@+id/switchAllHaltero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:checked="true"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/colorPrimaryDark" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/bench_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/bench_press"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        style="@style/text_filters"
+                        android:text="@string/clean" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/clean_and_jerk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/clean_and_jerk"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/deadlift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/deadlift"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent">
+
+                    <Switch
+                        android:id="@+id/front_squat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/front_squat"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/hang_power_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/hang_power_clean"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/kettlebell_swing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/kettlebell_swing"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/overhead_squat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/overhead_squat"
+                        style="@style/text_filters"
+                    />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/overhead_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/overhead_walk"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/power_snatch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/power_snatch"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/push_jerk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/push_jerk"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/push_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/push_press"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/romanian_deadlift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/romanian_deadlift"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/snatch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/snatch"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/squat_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/squat_clean"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/sumo_deadlift_high_pull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/sumo_deadlift_high_pull"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/thruster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/thruster"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/turkish_get_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/turkish_get_ups"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/wall_ball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/wall_ball"
+                        style="@style/text_filters"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/yard_overhead_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/yard_overhead_walk"
+                        style="@style/text_filters"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_filters"
+                    android:text="@string/gymnastics" />
+                <Switch
+                    android:id="@+id/switchAllGymnastics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:checked="true"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/dividerGymnastics"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/colorPrimaryDark" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/back_extensions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/back_extensions" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/box_jump"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/box_jump" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/burpees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/burpees" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/chest_to_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/chest_to_bar" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/ghd_sit_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/ghd_sit_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/handstand_push_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/handstand_push_ups" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/knees_to_elbow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/knees_to_elbow" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/l_pull_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/l_pull_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/muscle_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/muscle_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/pistols"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/pistols" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/pull_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/pull_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/push_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/push_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/ring_dips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/ring_dips" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/ring_hashtand_pushups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/ring_hashtand_pushups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/rope_climb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/rope_climb" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/sit_ups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/sit_ups" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/squats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/squats" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/toes_to_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/toes_to_bar" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Switch
+                        android:id="@+id/walking_lunge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:switchPadding="@dimen/switch_space"
+                        android:text="@string/walking_lunge" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

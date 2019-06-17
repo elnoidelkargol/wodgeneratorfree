@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:paddingBottom="2.5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imgViewFoodList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/title_girls_mayus"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/thegirls" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLytTheGirlsHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFoodListIconHome"
+                style="@style/iconHome"
+                app:srcCompat="@mipmap/thgirls"
+                />
+
+            <TextView
+                android:id="@+id/textViewPaleoFoodHome"
+                android:layout_below="@+id/imgFoodListIconHome"
+                android:text="@string/title_girls_mayus"
+                style="@style/textHome"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:paddingBottom="2.5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2.5dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/heroes" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLytTheHeroesHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imgViewRecipesIconHome"
+                style="@style/iconHome"
+                app:srcCompat="@mipmap/heroes" />
+
+            <TextView
+                android:id="@+id/txtViewRecipesTxtHome"
+                style="@style/textHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgViewRecipesIconHome"
+                android:text="@string/title_heroes_mayus" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2.5dp">
+
+        <ImageView
+            android:id="@+id/imgViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription=""
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/random" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLytRandomHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgViewCartHomeIcon"
+                style="@style/iconHome"
+                android:contentDescription="TODO"
+                app:srcCompat="@mipmap/shuffle_no_circle" />
+
+            <TextView
+                android:id="@+id/txtViewCartListHome"
+                style="@style/textHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgViewCartHomeIcon"
+                android:text="@string/title_random_navigation" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

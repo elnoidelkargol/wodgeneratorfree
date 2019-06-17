@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/random_wod_filter"
+        android:icon="@mipmap/filter"
+        android:title="@string/view_wod"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"
+        />
+<!--    <item
+        android:id="@+id/random_menu_results"
+        android:icon="@mipmap/results"
+        android:title="@string/your_results"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        android:enabled="false"
+        android:iconTint="@color/colorBlack"/>-->
+
+
+</menu>

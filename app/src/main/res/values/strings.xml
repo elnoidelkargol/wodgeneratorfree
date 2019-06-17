@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name" translatable="false">WodSelector</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="add_score">Add your score</string>
+    <string name="your_results">View your results</string>
+    <string name="view_wod">View W.O.D</string>
+    <string name="rounds">Rounds</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="result_text">Result:</string>
+    <string name="generate_random">Generate random W.O.D</string>
+    <string name="title_random_navigation">RANDOM</string>
+    <string name="title_girls_minus" translatable="false">The Girls</string>
+    <string name="title_heroes_minus" translatable="false">The Heroes</string>
+    <string name="random_wod_filters">Filters</string>
+    <string name="type">Type of W.O.D</string>
+    <string name="exercices">Exercices</string>
+    <string name="gymnastics" translatable="false">Gymnastics</string>
+    <string name="halterofilia" translatable="false">Halterofilia</string>
+    <string name="cardio" translatable="false">Cardio</string>
+    <string name="bear_crawl">Bear Crawl</string>
+    <string name="bench_press" translatable="false">Bench Press</string>
+    <string name="clean" translatable="false">Clean</string>
+    <string name="back_extensions" translatable="false">Back Extensions</string>
+    <string name="box_jump" translatable="false">Box Jump</string>
+    <string name="burpees" translatable="false">Burpees</string>
+    <string name="chest_to_bar" translatable="false">Chest To Bar</string>
+    <string name="double_unders" translatable="false">Double Unders</string>
+    <string name="run" translatable="false">Run</string>
+    <string name="row" translatable="false">Row</string>
+    <string name="clean_and_jerk" translatable="false">Clean And Jerk</string>
+    <string name="deadlift" translatable="false">Deadlift</string>
+    <string name="front_squat" translatable="false">Front Squat</string>
+    <string name="hang_power_clean" translatable="false">Hang Power Clean</string>
+    <string name="kettlebell_swing" translatable="false">Kettlebell Swing</string>
+    <string name="overhead_squat" translatable="false">Overhead Squat</string>
+    <string name="overhead_walk" translatable="false">Overhead Walk</string>
+    <string name="power_snatch" translatable="false">Power Snatch</string>
+    <string name="push_jerk" translatable="false">Push Jerk</string>
+    <string name="push_press" translatable="false">Push Press</string>
+    <string name="romanian_deadlift" translatable="false">Romanian Deadlift</string>
+    <string name="snatch" translatable="false">Snatch</string>
+    <string name="squat_clean" translatable="false">Squat Clean</string>
+    <string name="sumo_deadlift_high_pull" translatable="false">Sumo Deadlift High Pull</string>
+    <string name="thruster" translatable="false">Thruster</string>
+    <string name="turkish_get_ups" translatable="false">Turkish Get Ups</string>
+    <string name="wall_ball" translatable="false">Wall Ball</string>
+    <string name="yard_overhead_walk" translatable="false">Yard Overhead Walk</string>
+    <string name="ghd_sit_ups" translatable="false">Ghd Sit Ups</string>
+    <string name="handstand_push_ups" translatable="false">Handstand Push Ups</string>
+    <string name="knees_to_elbow" translatable="false">Knees To Elbow</string>
+    <string name="l_pull_ups" translatable="false">L Pull Ups</string>
+    <string name="muscle_ups" translatable="false">Muscle Ups</string>
+    <string name="pistols" translatable="false">Pistols</string>
+    <string name="pull_ups" translatable="false">Pull Ups</string>
+    <string name="push_ups" translatable="false">Push Ups</string>
+    <string name="ring_dips" translatable="false">Ring Dips</string>
+    <string name="ring_hashtand_pushups" translatable="false">Ring Hashtand Pushups</string>
+    <string name="rope_climb" translatable="false">Rope Climb</string>
+    <string name="sit_ups" translatable="false">Sit Ups</string>
+    <string name="squats" translatable="false">Squats</string>
+    <string name="toes_to_bar" translatable="false">Toes To Bar</string>
+    <string name="walking_lunge" translatable="false">Walking Lunge</string>
+    <string name="title_girls_mayus" translatable="false">THE GIRLS</string>
+    <string name="title_heroes_mayus" translatable="false">THE HEROES</string>
+    <string name="press_button_explain">Press the button below to generate random WOD</string>
+    <string name="no_type_selected">" You must select a type of W.O.D at least (girl or hero) in the filters"</string>
+    <string name="no_exercice_selected">" You must select at least one exercise in the filters."</string>
+    <string name="wod_posilities">" Possible W.O.Ds according to the selected filters: "</string>
+    <string name="training">TRAINING</string>
+    <string name="benchmarking">BENCHMARKS</string>
+    <string name="no_results_yet_wod">You have not yet registered any results for this W.O.D.</string>
+    <string name="no_results_yet">You have not yet registered any results.</string>
+
+    <string-array name="numberEjercicesArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="numEjercicios">Number Of Exercicies</string>
+    <string name="tiempos_tabata">Rounds and series</string>
+</resources>

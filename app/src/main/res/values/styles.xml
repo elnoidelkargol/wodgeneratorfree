@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title_filters">
+        <item name="android:fontFamily">@font/marsek_demi</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/title_filters</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">9dp</item>
+    </style>
+
+    <style name="text_filters">
+        <item name="android:fontFamily">@font/mosk_medium_500</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_filters</item>
+
+    </style>
+    <style name="txtDateResults">
+        <item name="android:fontFamily">@font/marsek_demi</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="txtResultResults">
+        <item name="android:fontFamily">@font/marsek_demi</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="iconHome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:tint">@color/colorLight</item>
+    </style>
+
+    <style name="textHome">
+        <item name="android:fontFamily">@font/marsek_demi</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">@color/colorLight</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wod_times_fragment"
+    android:background="@color/backgroundGeneral">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/timesNombreWod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/marsek_demi"
+            android:text="ANGIE"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            />
+        <TextView
+            android:id="@+id/no_results_yet_wod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/marsek_demi"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_results_yet_wod"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:visibility="gone"/>
+        <ListView
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:id="@+id/lstvwWodTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

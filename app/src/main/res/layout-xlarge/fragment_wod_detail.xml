@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGeneral">
+
+    <TextView
+        android:id="@+id/txtViewStartCountdown"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="5"
+        android:textSize="150sp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/lnrLytDetailWod"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/detailNombrewod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/deathrattlebb_reg"
+                android:paddingVertical="10dp"
+                android:text="Lumberjack 20"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_wod" />
+
+            <TextView
+                android:id="@+id/detailWodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:fontFamily="@font/marsek_demi"
+                android:text="For time"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/wod_type" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtViewCountDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/marsek_demi"
+                    android:text="00:00"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_results"
+                    android:visibility="gone" />
+
+                <Chronometer
+
+                    android:id="@+id/mchronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/marsek_demi"
+                    android:textSize="@dimen/text_results"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnPlayPause"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_play"
+                    android:tint="@color/colorBlack" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnStop"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_save_time"
+                    android:tint="@color/colorBlack" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:scrollIndicators="right"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/detailWodDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/teko_regular"
+                    android:scrollbars="vertical"
+                    android:text="afsdfasdfasdfasdfasdfasdfa"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/wod_description" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <!--    <Button
+                android:id="@+id/btn_add_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableStart="@mipmap/add_time"
+                android:padding="15dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="16dp"
+                android:visibility="visible"
+                />-->
+    </LinearLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<LinearLayout
+            android:id="@+id/exercices_list_row"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgvw_row_push_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/push_ups"/>
+            <ImageView
+                android:id="@+id/imgvw_row_front_squat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/front_squat"/>
+            <ImageView
+                android:id="@+id/imgvw_row_ghd_sit_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ghd_sit_ups"/>
+            <ImageView
+                android:id="@+id/imgvw_row_pistols"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/pistols"/>
+            <ImageView
+                android:id="@+id/imgvw_row_bench_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/bench_press"/>
+            <ImageView
+                android:id="@+id/imgvw_row_burpees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/burpees"/>
+            <ImageView
+                android:id="@+id/imgvw_row_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/clean"/>
+            <ImageView
+                android:id="@+id/imgvw_row_clean_and_jerk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/clean_and_jerk"/>
+            <ImageView
+                android:id="@+id/imgvw_row_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/run"/>
+            <ImageView
+                android:id="@+id/imgvw_row_deadlift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/deadlift"/>
+            <ImageView
+                android:id="@+id/imgvw_row_double_unders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/double_unders"/>
+            <ImageView
+                android:id="@+id/imgvw_row_back_extensions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/back_extensions"/>
+            <ImageView
+                android:id="@+id/imgvw_row_box_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/box_jump"/>
+            <ImageView
+                android:id="@+id/imgvw_row_handstand_push_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/handstand_push_ups"/>
+
+            <ImageView
+                android:id="@+id/imgvw_row_wall_ball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/wall_ball"/>
+            <ImageView
+                android:id="@+id/imgvw_row_hang_power_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/hang_power_clean"/>
+            <ImageView
+                android:id="@+id/imgvw_row_kettlebell_swing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/kettlebell_swing"/>
+            <ImageView
+                android:id="@+id/imgvw_row_knees_to_elbow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/knees_to_elbow"/>
+            <ImageView
+                android:id="@+id/imgvw_row_l_pull_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/l_pull_ups"/>
+            <ImageView
+                android:id="@+id/imgvw_row_muscle_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/muscle_ups"/>
+            <ImageView
+                android:id="@+id/imgvw_row_overhead_squat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/overhead_squat"/>
+            <ImageView
+                android:id="@+id/imgvw_row_overhead_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/overhead_walk"/>
+            <ImageView
+                android:id="@+id/imgvw_row_power_snatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/power_snatch"/>
+            <ImageView
+                android:id="@+id/imgvw_row_pull_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/pull_ups"/>
+            <ImageView
+                android:id="@+id/imgvw_row_push_jerk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/push_jerk"/>
+            <ImageView
+                android:id="@+id/imgvw_row_push_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/push_press"/>
+            <ImageView
+                android:id="@+id/imgvw_row_remo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/remo"/>
+            <ImageView
+                android:id="@+id/imgvw_row_ring_Dips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ring_Dips"/>
+            <ImageView
+                android:id="@+id/imgvw_row_rope_Climb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/rope_Climb"/>
+            <ImageView
+                android:id="@+id/imgvw_row_sit_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/sit_ups"/>
+
+            <ImageView
+                android:id="@+id/imgvw_row_snatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/snatch"/>
+            <ImageView
+                android:id="@+id/imgvw_row_squat_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/squat_clean"/>
+            <ImageView
+                android:id="@+id/imgvw_row_squats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/squats"/>
+            <ImageView
+                android:id="@+id/imgvw_row_sumo_deadlift_high_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/sumo_deadlift_high_pull"/>
+            <ImageView
+                android:id="@+id/imgvw_row_thruster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/thruster"/>
+            <ImageView
+                android:id="@+id/imgvw_row_walking_lunge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/walking_lunge"/>
+            <ImageView
+                android:id="@+id/imgvw_row_toes_to_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/toes_to_bar"/>
+            <ImageView
+                android:id="@+id/imgvw_row_turkish_get_ups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/turkish_get_ups"/>
+
+        </LinearLayout>-->
+</FrameLayout>

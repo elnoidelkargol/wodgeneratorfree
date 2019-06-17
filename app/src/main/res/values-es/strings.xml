@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_score">Añade tu resultado</string>
+    <string name="your_results">Ver tus resultados</string>
+    <string name="view_wod">Ver W.O.D</string>
+    <string name="rounds">Rondas</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="result_text">Resultado:</string>
+    <string name="generate_random">Generar W.O.D aleatorio</string>
+    <string name="title_random_navigation">ALEATORIO</string>
+    <string name="random_wod_filters">Filtro para generar W.O.D</string>
+    <string name="type">Tipo de W.O.D</string>
+    <string name="exercices">Ejercicios</string>
+    <string name="bear_crawl">Bear Crawl</string>
+    <string name="press_button_explain">Aprieta el botón inferior para generar un W.O.D aleatorio</string>
+    <string name="no_type_selected">Debes seleccionar un tipo de W.O.D como mínimo (chica o héroe) en los filtros</string>
+    <string name="no_exercice_selected">Debes seleccionar un ejercicio como mínimo en los filtros.</string>
+    <string name="wod_posilities">"W.O.Ds posibles según los filtros seleccionados: "</string>
+    <string name="training">ENTRENAMIENTO</string>
+    <string name="benchmarking">RESULTADOS</string>
+    <string name="no_results_yet_wod">"Aún no has registrado ningún resultado para este W.O.D. "</string>
+    <string name="no_results_yet">"Aún no has registrado ningún resultado. "</string>
+    <string name="numEjercicios">Número de  ejercicios</string>
+    <string name="tiempos_tabata">Rondas y séries</string>
+</resources>
